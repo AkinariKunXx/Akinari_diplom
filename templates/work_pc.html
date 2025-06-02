@@ -1,0 +1,597 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Рабочие компьютеры {% endblock %}
+{% block content %}
+
+<!-- Promo -->
+
+<section class="min-h-100vh flex justify-start items-center relative before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:-z-10">
+    <video playsinline="" autoplay="autoplay" loop="loop" muted="muted" preload="auto" class="w-full h-full object-cover -z-20 top-0">
+    <source src="{% static 'prev.mp4' %}">
+    </video>
+</section>
+
+<!-- 1 Section Cards -->
+
+<section class="mt-xxl-5">
+    <div class="text-center text-white">
+        <h1>Оптимальные</h1>
+    </div>
+<!-- 1 Card -->
+    <div class="container mx-auto py-12 mt-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="w-full max-w-sm bg-dark border-4 border-purple-500 shadow-sm rounded-3xl">
+                <a href="#">
+                    <img class="rounded-3xl" src="{% static 'IMG_6297.JPG' %}" alt="" />
+                </a>
+                <div class="px-5">
+                    <h5 class="text-3xl font-semibold text-white text-center no-underline mt-6"> ONE </h5>
+                </div>
+                <div class="flow-root mt-2">
+                    <ul role="list" class="divide-y divide-purple-400 ">
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'gpu.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Видеокарта
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'cpu.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Процессор
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'motherboard.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Материнская плата
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'ram.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Оперативная память
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'ssd.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        SSD накопитель
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+               </div>
+               <div class="flex items-center justify-between p-10">
+                    <a class="text-3xl font-bold text-white no-underline">120 300₽</a>
+                    <a href="#" class="text-white bg-purple-500 hover:bg-purple-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center no-underline"> Купить </a>
+               </div>
+            </div>
+
+<!-- 2 Card -->
+
+            <div class="w-full max-w-sm bg-dark border-4 border-purple-500 shadow-sm rounded-3xl">
+                <a href="#">
+                    <img class="rounded-3xl" src="{% static 'IMG_6297.JPG' %}" alt="" />
+                </a>
+                <div class="px-5">
+                    <h5 class="text-3xl font-semibold text-white text-center no-underline mt-6"> ONE </h5>
+                </div>
+
+                <div class="flow-root mt-2">
+                    <ul role="list" class="divide-y divide-purple-400 ">
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'gpu.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Видеокарта
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'cpu.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Процессор
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'motherboard.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Материнская плата
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'ram.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Оперативная память
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'ssd.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        SSD накопитель
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+               </div>
+               <div class="flex items-center justify-between p-10">
+                    <a class="text-3xl font-bold text-white no-underline">120 300₽</a>
+                    <a href="#" class="text-white bg-purple-500 hover:bg-purple-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center no-underline"> Купить </a>
+               </div>
+            </div>
+
+<!-- 3 Card -->
+
+            <div class="w-full max-w-sm bg-dark border-4 border-purple-500 shadow-sm rounded-3xl">
+                <a href="#">
+                    <img class="rounded-3xl" src="{% static 'IMG_6297.JPG' %}" alt="" />
+                </a>
+                <div class="px-5">
+                    <h5 class="text-3xl font-semibold text-white text-center no-underline mt-6"> ONE </h5>
+                </div>
+
+                <div class="flow-root mt-2">
+                    <ul role="list" class="divide-y divide-purple-400 ">
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'gpu.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Видеокарта
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'cpu.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Процессор
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'motherboard.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Материнская плата
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'ram.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        Оперативная память
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 mr-7">
+                            <div class="flex items-center bg-gray-600 rounded-xl">
+                                <div class="shrink-0">
+                                    <img class="w-10 h-10 ml-5" src="{% static 'ssd.png' %}" alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4 mt-3">
+                                    <p class="text-lg text-gray-400">
+                                        SSD накопитель
+                                    </p>
+                                    <p class="text-xl font-medium truncate text-white">
+                                        Модель
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+               </div>
+               <div class="flex items-center justify-between p-10">
+                    <a class="text-3xl font-bold text-white no-underline">120 300₽</a>
+                    <a href="#" class="text-white bg-purple-500 hover:bg-purple-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center no-underline"> Купить </a>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 1 Section Cards -->
+
+<!-- 1 Card -->
+<section class="container mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="w-full max-w-sm bg-dark border-4 border-purple-500 shadow-sm rounded-3xl">
+            <a href="#">
+                <img class="rounded-3xl" src="{% static 'IMG_6297.JPG' %}" alt="" />
+            </a>
+            <div class="px-5">
+                <h5 class="text-3xl font-semibold text-white text-center no-underline mt-6"> ONE </h5>
+            </div>
+            <div class="flow-root mt-2">
+                <ul role="list" class="divide-y divide-purple-400 ">
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'gpu.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Видеокарта
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'cpu.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Процессор
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'motherboard.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Материнская плата
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'ram.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Оперативная память
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'ssd.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    SSD накопитель
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+           <div class="flex items-center justify-between p-10">
+                <a class="text-3xl font-bold text-white no-underline">120 300₽</a>
+                <a href="#" class="text-white bg-purple-500 hover:bg-purple-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center no-underline"> Купить </a>
+           </div>
+        </div>
+
+<!-- 2 Card -->
+
+        <div class="w-full max-w-sm bg-dark border-4 border-purple-500 shadow-sm rounded-3xl">
+            <a href="#">
+                <img class="rounded-3xl" src="{% static 'IMG_6297.JPG' %}" alt="" />
+            </a>
+            <div class="px-5">
+                <h5 class="text-3xl font-semibold text-white text-center no-underline mt-6"> ONE </h5>
+            </div>
+
+            <div class="flow-root mt-2">
+                <ul role="list" class="divide-y divide-purple-400 ">
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'gpu.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Видеокарта
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'cpu.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Процессор
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'motherboard.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Материнская плата
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'ram.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Оперативная память
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'ssd.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    SSD накопитель
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+           <div class="flex items-center justify-between p-10">
+                <a class="text-3xl font-bold text-white no-underline">120 300₽</a>
+                <a href="#" class="text-white bg-purple-500 hover:bg-purple-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center no-underline"> Купить </a>
+           </div>
+        </div>
+
+<!-- 3 Card -->
+
+        <div class="w-full max-w-sm bg-dark border-4 border-purple-500 shadow-sm rounded-3xl">
+            <a href="#">
+                <img class="rounded-3xl" src="{% static 'IMG_6297.JPG' %}" alt="" />
+            </a>
+            <div class="px-5">
+                <h5 class="text-3xl font-semibold text-white text-center no-underline mt-6"> ONE </h5>
+            </div>
+
+            <div class="flow-root mt-2">
+                <ul role="list" class="divide-y divide-purple-400 ">
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'gpu.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Видеокарта
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'cpu.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Процессор
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'motherboard.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Материнская плата
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'ram.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    Оперативная память
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 mr-7">
+                        <div class="flex items-center bg-gray-600 rounded-xl">
+                            <div class="shrink-0">
+                                <img class="w-10 h-10 ml-5" src="{% static 'ssd.png' %}" alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4 mt-3">
+                                <p class="text-lg text-gray-400">
+                                    SSD накопитель
+                                </p>
+                                <p class="text-xl font-medium truncate text-white">
+                                    Модель
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+           <div class="flex items-center justify-between p-10">
+                <a class="text-3xl font-bold text-white no-underline">120 300₽</a>
+                <a href="#" class="text-white bg-purple-500 hover:bg-purple-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center no-underline"> Купить </a>
+           </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

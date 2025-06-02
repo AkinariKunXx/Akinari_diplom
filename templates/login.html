@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Авторизация {% endblock %}
+{% block content %}
+
+{% if form.errors %}
+<div role="alert" class="mt-3 relative flex gap-4 p-3 text-xl text-white bg-red-700 rounded-xl container">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="h-7 w-5 mr-2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+  </svg>
+  Неправильные данные
+</div>
+{% endif %}
+
+{% if next %}
+    {% if user.is_authenticated %}
+    <p>Your account doesn't have access to this page. To proceed,
+    please login with an account that has access.</p>
+    {% else %}
+    <p>Please login to see this page.</p>
+    {% endif %}
+{% endif %}
+
+<div class="relative flex flex-col rounded-xl bg-transparent items-center mt-[100px]">
+  <h4 class="block text-3xl font-medium text-purple-400">
+    Авторизация
+  </h4>
+  <form class="mt-12 w-80 max-w-screen-lg sm:w-96 mb-[490px]" method="post" action="{% url 'login' %}">
+{% csrf_token %}
+    <div class="mb-1 flex flex-col gap-6">
+      <div class="w-full max-w-sm min-w-[200px]">
+        <label class="block mb-2 text-sm text-gray-400">
+          Логин
+        </label>
+        <input type="text" class="w-full bg-transparent placeholder:text-gray-400 text-white text-sm border border-purple-500 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-purple-500 hover:border-purple-500 shadow-sm focus:shadow" placeholder="Логин" name="username" />
+      </div>
+      <div class="w-full max-w-sm min-w-[200px] mb-10">
+        <label class="block mb-2 text-sm text-gray-400">
+          Пароль
+        </label>
+        <input type="password" class="w-full bg-transparent placeholder:text-slate-400 text-white text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="Пароль" name="password" />
+      </div>
+    </div>
+    <button class="mt-4 w-full rounded-md bg-purple-500 py-2 px-4 border border-transparent text-center text-xl text-white transition-all shadow-md hover:shadow-lg focus:bg-purple-400 focus:shadow-none active:bg-purple-400 hover:bg-purple-500 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="submit">
+      Войти
+    </button>
+  </form>
+</div>
+{% endblock %}

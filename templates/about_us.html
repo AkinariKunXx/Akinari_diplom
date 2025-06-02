@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} О нас {% endblock %}
+{% block content %}
+
+<section class=" relative px-36">
+        <div class="w-full px-4 mx-auto w-full">
+            <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+                <div
+                    class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+                    <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                        <img class=" rounded-3xl object-cover" src="{% static '6.jpg' %}" alt="" />
+                    </div>
+                    <img class="sm:ml-0 ml-auto rounded-3xl object-cover" src="{% static '7.jpg' %}" alt="" />
+                </div>
+                <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                    <div class="w-full flex-col justify-center items-start gap-8 flex">
+                        <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                            <h2 class="text-purple-400 text-4xl font-bold font-manrope leading-normal text-center">
+                               Компания Pulse
+                            </h2>
+                            <p class="text-white font-normal leading-relaxed text-xl lg:text-start">
+                                Компания Pulse была основана в 2010 году. Мы — официальный партнер таких известных технологических гигантов как NVIDIA,
+                                Intel, Microsoft. Нам также удалось реализовать несколько успешных совместных проектов с такими известными игровыми компаниями как
+                                Wargaming, UbiSoft, Electronic Arts, Bethesda и Mail.Games.
+                            </p>
+                        </div>
+                        <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+                            <div class="flex-col justify-start items-start inline-flex">
+                                <h3 class="text-purple-400 text-4xl font-bold font-manrope leading-normal">15 лет</h3>
+                                <h6 class="text-gray-400 text-base font-normal leading-relaxed">За 15 лет мы выросли в одного из лидеров на игровом компьютерном рынке</h6>
+                            </div>
+                            <div class="flex-col justify-start items-start inline-flex">
+                                <h4 class="text-purple-400 text-4xl font-bold font-manrope leading-normal">50 000 пк</h4>
+                                <h6 class="text-gray-400 text-base font-normal leading-relaxed">Мы произвели более 50 тысяч игровых компьютеров для наших клиентов</h6>
+                            </div>
+                            <div class="flex-col justify-start items-start inline-flex">
+                                <h4 class="text-purple-400 text-4xl font-bold font-manrope leading-normal">32 турнира</h4>
+                                <h6 class="text-gray-400 text-base font-normal leading-relaxed">Провели 32 киберспортивных турнира при технической поддержке Pulse</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

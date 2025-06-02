@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Главная {% endblock %}
+{% block content %}
+
+<!-- Promo -->
+
+<div id="carouselExampleFade" class="carousel slide container-fluid flex" data-bs-ride="carousel">
+  <div class="carousel-inner rounded-3xl">
+    <div class="carousel-item active">
+      <img src="{% static '3.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '2.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '1.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+<!-- Model -->
+
+<section class="bg-black mt-24">
+    <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 container">
+    <p class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-purple-400 sm:text-5xl"> Модельный ряд </p>
+    <p class="mx-auto mt-2 max-w-lg text-gray-300 max-lg:text-center text-center text-2xl"> Какой компьютер подойдет вам? </p>
+    <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+
+      <!-- Card-1 -->
+
+      <div class="relative lg:row-span-2">
+        <div class="absolute inset-px rounded-lg bg-dark lg:rounded-l-[2rem]"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+          <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+            <p class="mt-2 text-2xl font-medium tracking-tight text-purple-400 max-lg:text-center text-center"> Игровые ПК</p>
+            <p class="mt-2 text-xl text-gray-400  text-center"> Компьютеры для геймеров </p>
+          </div>
+          <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+            <div class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-purple-600 bg-dark shadow-2xl">
+              <img class="size-full object-cover" src="{% static 'gaming.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
+      </div>
+
+      <!-- Card-2 -->
+
+      <div class="relative max-lg:row-start-1">
+        <div class="absolute inset-px rounded-lg bg-dark max-lg:rounded-t-[2rem]"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+          <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+            <p class="mt-2 text-2xl font-medium tracking-tight text-purple-400 max-lg:text-center text-center"> Техническое обслуживание </p>
+            <p class="mt-2 text-xl text-gray-400 text-center"> Забота о вашем ПК </p>
+          </div>
+        </div>
+        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
+      </div>
+
+      <!-- Card-3 -->
+
+      <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+        <div class="absolute inset-px rounded-lg bg-dark"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+          <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+            <p class="mt-2 text-2xl font-medium tracking-tight text-purple-400 max-lg:text-center text-center"> Моддинг и кастомизация </p>
+            <p class="mt-2 text-xl text-gray-400  text-center"> Персонализация ПК </p>
+          </div>
+          <div class="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
+            <img class="h-[min(152px,40cqw)] object-cover" src="" alt="">
+          </div>
+        </div>
+        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
+      </div>
+
+      <!-- Card-4 -->
+
+      <div class="relative lg:row-span-2">
+        <div class="absolute inset-px rounded-lg bg-dark max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+          <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+            <p class="mt-2 text-2xl font-medium tracking-tight text-purple-400 max-lg:text-center text-center"> Рабочие станции </p>
+            <p class="mt-2 text-xl text-gray-400  text-center"> Решения для профессионалов </p>
+          </div>
+          <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+            <div class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-purple-600 bg-dark shadow-2xl">
+              <img class="size-full object-cover" src="{% static 'work.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+
+<section class="bg-black mt-10">
+  <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 p-32">
+    <p class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-purple-400 sm:text-5xl"> Услуги </p>
+    <p class="mx-auto mt-2 max-w-lg text-gray-300 max-lg:text-center text-center text-2xl"> Выгодные программы купить новый компьютер </p>
+    <div class="mt-10 grid grid-cols-2 gap-4 ">
+
+      <!-- Card-1 -->
+
+      <div class="relative max-lg:row-start-1">
+        <div class="absolute inset-px rounded-3xl bg-dark max-lg:rounded-t-[2rem]"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+          <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+            <p class="mt-2 font-medium tracking-tight text-purple-400 max-lg:text-center text-center text-2xl"> Программа трейд-ин </p>
+            <p class="mt-2 max-w-lg text-gray-400 max-lg:text-center text-center text-xl"> Сдай стары ПК и получи новый </p>
+          </div>
+          <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-8 lg:pb-2">
+            <img class="w-full max-lg:max-w-xs rounded-3xl" src="{% static '6.jpg' %}" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Card-2 -->
+
+      <div class="relative max-lg:row-start-1">
+        <div class="absolute inset-px rounded-3xl bg-dark max-lg:rounded-t-[2rem]"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+          <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+            <p class="mt-2 font-medium tracking-tight text-purple-400 max-lg:text-center text-center text-2xl"> Рассрочка и кредит </p>
+            <p class="mt-2 max-w-lg text-gray-400 max-lg:text-center text-center text-xl"> Без процентов и переплат </p>
+          </div>
+          <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-8 lg:pb-2 ">
+            <img class="w-full max-lg:max-w-xs rounded-3xl" src="{% static '7.jpg' %}" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Sale -->
+
+<section class="justify-start items-center relative before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:-z-10 before:bg-black/70">
+    <img src="{% static '9.jpg' %}" class="absolute w-full h-full object-cover -z-20 top-0" alt="" />
+    <div class="py-[200px] bg-cover bg-center desktop:bg-top flex justify-center items-center">
+        <div class=''>
+            <div class='flex gap-32 tablet:flex-row tablet:gap-x-6 tablet:justify-between '>
+                <div class="flex flex-col ">
+                    <div class='opacity-60 text-purple-400 tablet:text-[18px] desktop:text-[22px] self-center text-3xl'>245</div>
+                    <div class='h-px w-14 bg-textOverline self-center'></div>
+                    <div class='opacity-60 text-center text-white tablet:text-[17px] desktop:text-[22px] self-center text-3xl'>Ежемесячные продажи</div>
+                </div>
+                <div class="flex flex-col">
+                    <div class='opacity-60 text-purple-400 tablet:text-[18px] self-center desktop:text-[22px] text-4xl'>1543</div>
+                    <div class='h-px w-14 bg-textOverline self-center'></div>
+                    <div class='opacity-60 text-center text-white tablet:text-[17px] self-center desktop:text-[22px] text-3xl'>Довольных клиентов</div>
+                </div>
+                <div class="flex flex-col">
+                    <div class='opacity-60 text-purple-400 tablet:text-[18px] self-center desktop:text-[22px] text-3xl'>57</div>
+                    <div class='h-px w-14 bg-textOverline self-center'></div>
+                    <div class='opacity-60 text-center text-white tablet:text-[17px] self-center desktop:text-[22px] text-3xl'>Работников в команде</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Accordion -->
+
+<section class="p-10 p-md-10 bg-black">
+    <div class='bg-dark p-5 flex-wrap rounded-3xl'>
+        <h2 class='md:text-tabletTitle xl:text-desktopTitle mb-4 md:mb-8 text-center text-5xl text-purple-400'> Преимущества </h2>
+
+        <div class="border-b border-white">
+          <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-5 text-purple-400 text-2xl">
+            <span> Качественный сервис </span>
+            <span id="icon-1" class="text-purple-400 transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </button>
+          <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="pb-5 text-xl text-slate-500">
+              В Pulse мы стремимся обеспечить лучшее обслуживание клиентов в индустрии сборки персональных компьютеров.
+              Помимо того, что мы знаем все, что касается сборки ПК, мы также гарантируем лучшие впечатления от вашего использования готовых сборок.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion item 2 -->
+        <div class="border-b border-white">
+          <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center py-5 text-purple-400 text-2xl">
+            <span> Клиентоориентированный подход </span>
+            <span id="icon-2" class="text-purple-400 transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </button>
+          <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="pb-5 text-xl text-slate-500">
+              Мы лично учитываем все ваши уникальные потребности и вопросы, чтобы вы могли сэкономить время и получить 100% актуальные цены,
+              наличие комплектующих и рекомендации от ведущих экспертов по сборке ПК.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion item 3 -->
+
+        <div class="border-b border-white">
+          <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center py-5 text-purple-400 text-2xl">
+            <span> Первоклассные компоненты </span>
+            <span id="icon-3" class="text-purple-400 transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </button>
+          <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="pb-5 text-xl text-slate-500">
+              Наш ассортимент готовых сборок состоит из высококачественных компонентов, тщательно отобранных, чтобы превзойти ожидания наших самых требовательных клиентов.
+              Наши сборки выходят за рамки стандартных конфигураций: мощные, стильные и надежные, с современным дизайном и передовыми технологиями.
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
