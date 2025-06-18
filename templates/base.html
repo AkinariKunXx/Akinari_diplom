@@ -31,14 +31,28 @@
     </div>
 <!-- Shop and Sign in -->
     <div class="hidden lg:flex lg:flex-1 lg:justify-end form-switch">
+      {% if request.user.is_authenticated %}
+      {% if request.user.is_superuser %}
+      <a href="{% url 'profile' %}" class="text-purple-400 font-semibold rounded-3xl text-decoration-none text-2xl mr-10"><span aria-hidden="true"></span>
+        <span class="sr-only">Админка</span>
+        <img class="w-14 white items-center" src="{% static 'user.png' %}" alt="">
+      </a>
+      {% else %}
+      <a href="{% url 'profile' %}" class="text-purple-400 font-semibold rounded-3xl text-decoration-none text-2xl mr-10"><span aria-hidden="true"></span>
+        <span class="sr-only">Профиль</span>
+        <img class="w-14 white items-center" src="{% static 'user.png' %}" alt="">
+      </a>
+      {% endif %}
+      <a href="{% url 'logout' %}" class="text-purple-400 font-semibold rounded-3xl text-decoration-none text-2xl mr-10"><span aria-hidden="true"></span>
+        <span class="sr-only">Выход</span>
+        <img class="w-14 white items-center" src="{% static 'logout.png' %}" alt="">
+      </a>
+      {% else %}
       <a href="{% url 'login' %}" class="text-purple-400 font-semibold rounded-3xl text-decoration-none text-2xl mr-10"><span aria-hidden="true"></span>
-        <span class="sr-only">Company</span>
+        <span class="sr-only">Вход</span>
         <img class="w-14 white items-center" src="{% static 'log-in.png' %}" alt="">
       </a>
-      <a href="{% url 'index' %}" class="text-purple-400 font-semibold rounded-3xl text-decoration-none text-2xl"><span aria-hidden="true"></span>
-        <span class="sr-only">Company</span>
-        <img class="w-12 white items-center" src="{% static 'shopping-cart.png' %}" alt="">
-      </a>
+      {% endif %}
     </div>
   </nav>
   <div class="lg:hidden hidden" role="dialog" aria-modal="true">
